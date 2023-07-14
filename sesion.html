@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sesion.css">
+    <title>ARISHA SUMMER | LOGIN</title>
+    <link rel="icon" href="logo.jpg">
+    
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo" title="Arisha Boutique">Arisha</a>
+        <ul>
+            <li title="Pagina principal"><a href="index.html" class="active">Inicio</a></li>
+            <li title="Mas informacion"><a href="#" class="active">Sobre nosotros</a></li>
+            <li title="Fotos"><a href="galery.html" class="active">Galeria</a></li>
+            <li title="Contactos"><a href="#" class="active">Contactanos</a></li> 
+            <li title="Su cuenta"><a href="sesion.html" class="active">Iniciar sesion</a></li>
+        </ul>
+    </header>
+    <div class="container">
+    <form action="">
+        <h3>Log In</h3>
+        <div class="inputBox">
+            <span>Usuario</span>
+            <div class="box">
+                <div class="icon"><ion-icon name="person"></ion-icon></div>
+                <input type="email">
+            </div>
+        </div>
+        <div class="inputBox">
+            <span>Contraseña</span>
+            <div class="box">
+                <div class="icon"><ion-icon name="lock-closed"></ion-icon></div>
+                <input type="password">
+            </div>
+        </div>
+        <label>
+            <input type="checkbox"> Recuerdame
+        </label>
+        <div class="inputBox">
+            <div class="box">
+                <div class="icon"><ion-icon name="checkmark-done-outline"></ion-icon></ion-icon></div>
+                <input type="submit" value="log in" id="login">
+            </div>
+        </div>
+        <a href="#" class="forgot">Olvide mi contraseña</a>
+    </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     function validar(){
+            var user=prompt("User: ");
+            var password=prompt("Password: ");
+            if((user==="marilyn")&&(password==="1234")){/*== (comparacion normal) === (comparacion estricta)*/
+                alert("Enviado");
+                window.location.href=""
+            }else{
+                alert("Credenciales Incorrectas");
+            }
+        }
+</script>
+</body>
+</html>

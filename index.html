@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Arisha Summer</title>
+</head>
+<body class="resolucion">
+    <header id="header">
+        <a href="#" class="logo" title="Arisha Boutique">Arisha</a>
+        <ul>
+            <li title="Pagina principal"><a href="index.html" class="active">Inicio</a></li>
+            <li title="Mas informacion"><a href="#" class="active">Sobre nosotros</a></li>
+            <li title="Fotos"><a href="galery.html" class="active">Galeria</a></li>
+            <li title="Contactos"><a href="#" class="active">Contactanos</a></li> 
+            <li title="Su cuenta"><a href="sesion.html" class="active">Iniciar sesion</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>Arisha</span><br>SUMMER</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="index.html" id="btn">Inicio</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Sobre nuestros productos</h2>
+        <p>
+            Arisha es una reconocida marca de trajes de baño que se destaca por su estilo moderno y elegante. 
+            Sus diseños están cuidadosamente elaborados para realzar la belleza y la confianza de quienes los
+            usan.<br>Los trajes de baño de Arisha son conocidos por su atención al detalle y su calidad excepcional. Utilizando materiales de primera calidad, como tejidos resistentes al cloro y protección UV, 
+            garantizan durabilidad y protección mientras disfrutas del sol y el agua.<br>La colección de trajes de baño de Arisha ofrece una amplia variedad de estilos y cortes, desde bikinis hasta trajes de baño de una sola pieza. Sus diseños abarcan desde estampados vibrantes y audaces hasta tonos sutiles y elegantes, lo que permite a cada persona encontrar el traje de baño que mejor se 
+            adapte a su estilo y preferencias.<br>Además de su estética atractiva, los trajes de baño de Arisha también se caracterizan por su ajuste excepcional. La marca se preocupa por realzar la figura femenina y asegurarse de que cada prenda se adapte cómodamente y se sienta 
+            como una segunda piel.<br>Ya sea que te dirijas a la playa, la piscina o cualquier destino tropical, los trajes de baño de Arisha te brindarán un aspecto sofisticado y chic. Con sus diseños vanguardistas y atención a la calidad, Arisha se ha convertido en una elección popular entre aquellos que buscan destacar con 
+            estilo y elegancia en sus actividades acuáticas.
+        </p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water')
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50+value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * 0.12 +'px';
+            forest.style.top = value * -0.05 + 'px';
+            header.style.top = value * 0.5 +'px';
+
+        })
+    </script>
+    <footer>
+        <ul>
+            <li title="Integrante 1"><a class="active">JORDY BUSTAMANTE</a></li>
+            <li title="Integrante 2"><a class="active">JEAN CARLOS CHOEZ</a></li>
+            <li title="Integrante 3"><a class="active">DANILO MENOSCAL</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
